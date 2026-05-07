@@ -27,7 +27,7 @@ export function ContactPageOverride() {
           </div>
         </section>
 
-        <section className="mt-8 grid gap-7 lg:grid-cols-[1.1fr_0.9fr]">
+        <section className="mt-8">
           <div className="rounded-3xl border border-[#FA9884]/40 bg-white p-6 sm:p-8">
             <h2 className="text-2xl font-semibold">Send a message</h2>
             <form className="mt-5 grid gap-4">
@@ -55,29 +55,6 @@ export function ContactPageOverride() {
                 Submit Now
               </button>
             </form>
-          </div>
-
-          <div className="space-y-5">
-            <div className="rounded-2xl border border-[#FA9884]/40 bg-white p-5">
-              <h3 className="text-lg font-semibold">Telephone Hours</h3>
-              <p className="mt-2 text-sm text-[#6c3b3b]">Monday to Friday</p>
-              <p className="text-sm text-[#6c3b3b]">8:30am to 5:00pm Pacific (PDT)</p>
-            </div>
-            <div className="rounded-2xl border border-[#FA9884]/40 bg-white p-5">
-              <h3 className="text-lg font-semibold">Toll Free Telephone</h3>
-              <p className="mt-2 text-sm text-[#6c3b3b]">1-888-880-9539</p>
-              <p className="text-sm text-[#6c3b3b]">(646) 417-8294</p>
-            </div>
-            <div className="rounded-2xl border border-[#FA9884]/40 bg-white p-5">
-              <h3 className="text-lg font-semibold">US Address</h3>
-              <p className="mt-2 text-sm text-[#6c3b3b]">Suite 1400 - 505 Second Avenue</p>
-              <p className="text-sm text-[#6c3b3b]">Seattle, WA 98104</p>
-            </div>
-            <div className="rounded-2xl border border-[#FA9884]/40 bg-white p-5">
-              <h3 className="text-lg font-semibold">Canada Address</h3>
-              <p className="mt-2 text-sm text-[#6c3b3b]">Suite 203 - 901 West 3rd St.</p>
-              <p className="text-sm text-[#6c3b3b]">North Vancouver, BC V7P 3P9, Canada</p>
-            </div>
           </div>
         </section>
       </main>

@@ -49,9 +49,6 @@ export default function AboutPage() {
             />
           </div>
           <div className="mt-6 flex flex-wrap gap-3">
-            <Link href="/pricing" className="rounded-full bg-[#E74646] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#c73737]">
-              View Pricing
-            </Link>
             <Link href="/contact" className="rounded-full border border-[#E74646] px-5 py-2.5 text-sm font-semibold text-[#E74646] hover:bg-[#fff2ef]">
               Contact Team
             </Link>

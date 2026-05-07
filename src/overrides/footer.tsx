@@ -14,15 +14,14 @@ export function FooterOverride() {
             </div>
             <h3 className="mt-4 text-2xl font-semibold">{SITE_CONFIG.name}</h3>
             <p className="mt-3 text-sm leading-7 text-[#ffd7bd]">
-              Distribution-focused newsroom for press releases, brand announcements, and latest media updates.
+              Distribution-focused newsroom for release media, brand announcements, and latest media updates.
             </p>
           </div>
           <div>
             <h4 className="text-sm font-semibold uppercase tracking-[0.2em] text-[#FA9884]">Platform</h4>
             <div className="mt-4 grid gap-2 text-sm">
               <Link href="/latest-news" className="hover:text-white">Latest News</Link>
-              <Link href="/pricing" className="hover:text-white">Pricing</Link>
-              <Link href="/updates" className="hover:text-white">Press Releases</Link>
+              <Link href="/updates" className="hover:text-white">Release Media</Link>
               <Link href="/search" className="hover:text-white">Search</Link>
             </div>
           </div>
@@ -41,7 +40,6 @@ export function FooterOverride() {
               <Link href="/privacy" className="hover:text-white">Privacy</Link>
               <Link href="/terms" className="hover:text-white">Terms</Link>
               <Link href="/cookies" className="hover:text-white">Cookies</Link>
-              <Link href="/licenses" className="hover:text-white">Licenses</Link>
             </div>
           </div>
         </div>

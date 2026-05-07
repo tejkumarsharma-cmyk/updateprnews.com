@@ -40,7 +40,7 @@ export async function TaskDetailPageOverride({ slug }: { task: TaskKey; slug: st
   const subtitle =
     (typeof content.excerpt === 'string' && content.excerpt) ||
     post.summary ||
-    'Press release update from the UpdatePRNews editorial team.'
+    'Release media update from the UpdatePRNews editorial team.'
   const releaseUrl = `/updates/${post.slug}`
   const encodedUrl = encodeURIComponent(`https://updateprnews.com${releaseUrl}`)
   const encodedTitle = encodeURIComponent(post.title)
@@ -55,7 +55,7 @@ export async function TaskDetailPageOverride({ slug }: { task: TaskKey; slug: st
             <span>›</span>
             <Link href="/latest-news">Latest News</Link>
             <span>›</span>
-            <span className="truncate">{String((content.category as string) || 'Press Release')}</span>
+            <span className="truncate">{String((content.category as string) || 'Release Media')}</span>
           </div>
           <h1 className="mt-4 max-w-5xl text-4xl font-semibold leading-tight tracking-[-0.04em] sm:text-5xl">
             {post.title}
@@ -66,14 +66,7 @@ export async function TaskDetailPageOverride({ slug }: { task: TaskKey; slug: st
               By {post.authorName || 'Editorial Desk'}
             </span>
             <span className="rounded-full bg-[#FFE5CA] px-3 py-1">
-              {new Date(post.publishedAt || Date.now()).toLocaleDateString('en-US', {
-                month: 'long',
-                day: 'numeric',
-                year: 'numeric',
-              })}
-            </span>
-            <span className="rounded-full bg-[#FFE5CA] px-3 py-1">
-              {String((content.category as string) || 'Press Release')}
+              {String((content.category as string) || 'Release Media')}
             </span>
           </div>
         </section>

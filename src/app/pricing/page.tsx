@@ -53,14 +53,14 @@ export default function PricingPage() {
       <main className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
         <section className="rounded-3xl border border-[#FA9884]/40 bg-white p-6 sm:p-8">
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#E74646]">Business Wire Pricing</p>
-          <h1 className="mt-2 text-4xl font-semibold tracking-[-0.04em] sm:text-5xl">Choose a press release plan that matches your campaign size</h1>
+          <h1 className="mt-2 text-4xl font-semibold tracking-[-0.04em] sm:text-5xl">Choose a release media plan that matches your campaign size</h1>
           <p className="mt-4 max-w-3xl text-sm leading-7 text-[#6c3b3b]">
             Three plans built around distribution level, analytics depth, and media reach.
           </p>
           <div className="relative mt-6 h-52 overflow-hidden rounded-2xl sm:h-64">
             <ContentImage
               src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1400"
-              alt="Press release pricing and analytics dashboard"
+              alt="Release media pricing and analytics dashboard"
               fill
               className="object-cover"
               intrinsicWidth={1400}

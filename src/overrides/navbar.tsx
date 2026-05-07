@@ -11,7 +11,6 @@ export const NAVBAR_OVERRIDE_ENABLED = true
 const primaryLinks = [
   { label: 'Home', href: '/' },
   { label: 'Latest News', href: '/latest-news' },
-  { label: 'Pricing', href: '/pricing' },
   { label: 'About Us', href: '/about' },
   { label: 'Contact', href: '/contact' },
 ]

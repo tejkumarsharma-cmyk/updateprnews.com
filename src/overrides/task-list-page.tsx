@@ -75,7 +75,7 @@ export async function TaskListPageOverride({
       <main className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
         <section className="rounded-3xl border border-[#FA9884]/40 bg-white p-6 sm:p-8">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#E74646]">Latest News</p>
-          <h1 className="mt-2 text-4xl font-semibold tracking-[-0.04em]">Press release listing and discovery</h1>
+          <h1 className="mt-2 text-4xl font-semibold tracking-[-0.04em]">Release media listing and discovery</h1>
           <p className="mt-3 max-w-3xl text-sm leading-7 text-[#6c3b3b]">
             Browse announcements with category and date filters, then open each release page for complete details.
           </p>
@@ -140,16 +140,11 @@ export async function TaskListPageOverride({
                 </div>
                 <div className="p-5">
                   <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#E74646]">
-                    {String((post.content as any)?.category || 'Press Release')}
+                    {String((post.content as any)?.category || 'Release Media')}
                   </p>
                   <h2 className="mt-2 line-clamp-2 text-2xl font-semibold leading-snug">{post.title}</h2>
                   <p className="mt-2 text-sm text-[#7b4a4a]">
-                    {new Date(post.publishedAt || Date.now()).toLocaleDateString('en-US', {
-                      month: 'long',
-                      day: 'numeric',
-                      year: 'numeric',
-                    })}{' '}
-                    · {post.authorName || 'Editorial Desk'}
+                    {post.authorName || 'Editorial Desk'}
                   </p>
                   <p className="mt-3 line-clamp-3 text-sm leading-7 text-[#6c3b3b]">{excerpt(post.summary)}</p>
                   <Link href={`/updates/${post.slug}`} className="mt-4 inline-flex rounded-full border border-[#E74646] px-4 py-2 text-sm font-semibold text-[#E74646] hover:bg-[#fff2ef]">

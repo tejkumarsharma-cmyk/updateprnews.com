@@ -2,7 +2,7 @@ import type { TaskKey } from '@/lib/site-config'
 
 export const siteContent = {
   navbar: {
-    tagline: 'Media Press Release Platform',
+    tagline: 'Media Release Media Platform',
   },
   footer: {
     tagline: 'Distribution-led newsroom publishing',
@@ -11,16 +11,16 @@ export const siteContent = {
     badge: 'Trusted Distribution',
     title: ['Publish news that reaches media, journalists, and partners faster.'],
     description:
-      'UpdatePRNews is built for press release teams that need clean publishing flows, clear visibility, and measurable coverage.',
+      'UpdatePRNews is built for release media teams that need clean publishing flows, clear visibility, and measurable coverage.',
     primaryCta: {
       label: 'Explore latest releases',
       href: '/updates',
     },
     secondaryCta: {
-      label: 'View pricing',
-      href: '/pricing',
+      label: 'Latest news',
+      href: '/updates',
     },
-    searchPlaceholder: 'Search press releases',
+    searchPlaceholder: 'Search release media',
     focusLabel: 'Breaking',
     featureCardBadge: 'media note',
     featureCardTitle: 'New announcements appear instantly on the newsroom feed.',
@@ -29,13 +29,13 @@ export const siteContent = {
   },
   home: {
     metadata: {
-      title: 'Press release distribution and latest business news',
+      title: 'Release media distribution and latest business news',
       description:
-        'Publish and discover press releases with a modern newsroom designed for media distribution.',
+        'Publish and discover release media with a modern newsroom designed for media distribution.',
       openGraphTitle: 'UpdatePRNews | Media distribution and newsroom',
       openGraphDescription:
-        'A clean SaaS-style press release platform with listing, search, distribution tiers, and story pages.',
-      keywords: ['press releases', 'media distribution', 'latest news', 'public relations', 'newsroom'],
+        'A clean SaaS-style release media platform with listing, search, distribution tiers, and story pages.',
+      keywords: ['release media', 'media distribution', 'latest news', 'public relations', 'newsroom'],
     },
     introBadge: 'Why UpdatePRNews',
     introTitle: 'A distribution-first newsroom for modern PR teams.',
@@ -46,9 +46,8 @@ export const siteContent = {
     ],
     sideBadge: 'What this product emphasizes',
     sidePoints: [
-      'Fast press release publishing workflows.',
+      'Fast release media publishing workflows.',
       'Category-driven latest news discovery.',
-      'Clear pricing with distribution level comparisons.',
       'Readable article pages with related stories and sharing.',
     ],
     primaryLink: {
@@ -56,25 +55,25 @@ export const siteContent = {
       href: '/updates',
     },
     secondaryLink: {
-      label: 'See plans',
-      href: '/pricing',
+      label: 'Latest news',
+      href: '/updates',
     },
   },
   cta: {
     badge: 'Start Publishing',
-    title: 'Choose a plan and distribute your next press release in minutes.',
+    title: 'Choose a plan and distribute your next release media in minutes.',
     description:
       'From startup launches to enterprise campaigns, UpdatePRNews gives your team a single platform to publish and measure outcomes.',
     primaryCta: {
-      label: 'View pricing',
-      href: '/pricing',
+      label: 'Latest news',
+      href: '/updates',
     },
     secondaryCta: {
       label: 'Latest news',
       href: '/updates',
     },
   },
-  taskSectionHeading: 'Latest press releases',
+  taskSectionHeading: 'Latest release media',
   taskSectionDescriptionSuffix: 'Read the newest distributed announcements.',
 } as const
 
@@ -108,8 +107,8 @@ export const taskPageMetadata: Record<Exclude<TaskKey, 'comment' | 'org' | 'soci
     description: 'Open PDFs and downloadable files.',
   },
   mediaDistribution: {
-    title: 'Latest press releases',
-    description: 'Browse newly published press releases and newsroom announcements.',
+    title: 'Latest release media',
+    description: 'Browse newly published release media and newsroom announcements.',
   },
 }
 
@@ -128,14 +127,13 @@ export const taskIntroCopy: Record<
   comment: { title: 'Comments', paragraphs: ['Commentary and response posts.'], links: [{ label: 'Home', href: '/' }] },
   org: { title: 'Organizations', paragraphs: ['Organization pages and entities.'], links: [{ label: 'Home', href: '/' }] },
   mediaDistribution: {
-    title: 'Latest news and press releases',
+    title: 'Latest news and release media',
     paragraphs: [
-      'This newsroom is optimized for press release discovery with filters, search controls, and fast-scanning article cards.',
+      'This newsroom is optimized for release media discovery with filters, search controls, and fast-scanning article cards.',
       'Use category and date controls to quickly move from broad updates to campaign-specific release coverage.',
     ],
     links: [
       { label: 'Home', href: '/' },
-      { label: 'Pricing', href: '/pricing' },
     ],
   },
 }

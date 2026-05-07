@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { BarChart3, CheckCircle2, Megaphone, Sparkles, Zap } from 'lucide-react'
+import { BarChart3, CheckCircle2, Megaphone, Sparkles } from 'lucide-react'
 import { NavbarShell } from '@/components/shared/navbar-shell'
 import { Footer } from '@/components/shared/footer'
 import { fetchTaskPosts } from '@/lib/task-data'
@@ -47,7 +47,7 @@ export async function HomePageOverride() {
             <div className="space-y-6">
               <div className="inline-flex items-center gap-2 rounded-full bg-[#E74646] px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-white">
                 <Megaphone className="h-4 w-4" />
-                Press Release Platform
+                Release Media Platform
               </div>
               <h1 className="text-4xl font-semibold leading-tight tracking-[-0.04em] sm:text-5xl lg:text-6xl">
                 Send your news to journalists, publishers, and search audiences instantly.
@@ -56,13 +56,6 @@ export async function HomePageOverride() {
                 {SITE_CONFIG.description}
               </p>
               <div className="flex flex-wrap gap-3">
-                <Link
-                  href="/pricing"
-                  className="inline-flex items-center gap-2 rounded-full border border-[#e74646] px-6 py-3 text-sm font-semibold text-[#e74646] transition hover:bg-[#fff2ef]"
-                >
-                  View Pricing
-                  <Zap className="h-4 w-4" />
-                </Link>
                 <Link
                   href="/latest-news"
                   className="inline-flex items-center gap-2 rounded-full border border-[#e74646] px-6 py-3 text-sm font-semibold text-[#e74646] transition hover:bg-[#fff2ef]"
@@ -144,7 +137,7 @@ export async function HomePageOverride() {
           <div className="flex items-end justify-between gap-4">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#E74646]">Latest News</p>
-              <h2 className="mt-2 text-3xl font-semibold tracking-[-0.03em]">Read the most recent press releases</h2>
+              <h2 className="mt-2 text-3xl font-semibold tracking-[-0.03em]">Read the most recent release media</h2>
             </div>
             <Link href="/latest-news" className="text-sm font-semibold text-[#E74646] hover:underline">
               View all
@@ -165,7 +158,7 @@ export async function HomePageOverride() {
                 </div>
                 <div className="p-5">
                   <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#E74646]">
-                    {String((post.content as any)?.category || 'Press Release')}
+                    {String((post.content as any)?.category || 'Release Media')}
                   </p>
                   <h3 className="mt-2 line-clamp-2 text-xl font-semibold">{post.title}</h3>
                   <p className="mt-2 line-clamp-3 text-sm leading-6 text-[#6c3b3b]">{excerpt(post.summary)}</p>
@@ -189,9 +182,6 @@ export async function HomePageOverride() {
                 </p>
               </div>
               <div className="flex flex-wrap gap-3 lg:justify-end">
-                <Link href="/pricing" className="inline-flex rounded-full bg-white px-6 py-3 text-sm font-semibold text-[#E74646] hover:bg-[#FFF3E2]">
-                  See Pricing
-                </Link>
                 <Link href="/contact" className="inline-flex rounded-full border border-white/50 px-6 py-3 text-sm font-semibold text-white hover:bg-white/10">
                   Contact Sales
                 </Link>
